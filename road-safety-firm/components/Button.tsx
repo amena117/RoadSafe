@@ -24,7 +24,24 @@ const Button = ({ children, href, onClick, variant = 'primary', className = '', 
     };
 
 
-    const content = (
+    if (href && !disabled) {
+        return (
+            <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block"
+            >
+                <Link
+                    href={href}
+                    className={`${baseStyles} ${variants[variant]} ${className}`}
+                >
+                    {children}
+                </Link>
+            </motion.div>
+        );
+    }
+
+    return (
         <motion.button
             whileHover={disabled ? {} : { scale: 1.05 }}
             whileTap={disabled ? {} : { scale: 0.95 }}
@@ -36,16 +53,6 @@ const Button = ({ children, href, onClick, variant = 'primary', className = '', 
             {children}
         </motion.button>
     );
-
-    if (href && !disabled) {
-        return (
-            <Link href={href} legacyBehavior>
-                {content}
-            </Link>
-        );
-    }
-
-    return content;
 };
 
 export default Button;
