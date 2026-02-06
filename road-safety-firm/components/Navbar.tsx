@@ -69,7 +69,7 @@ const Navbar = () => {
 
                         <Link href="/contact">
                             <button className={`px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition-all transform hover:-translate-y-0.5 ${scrolled
-                                ? 'bg-primary text-white hover:bg-blue-700'
+                                ? 'bg-primary text-black hover:bg-blue-700'
                                 : 'bg-white text-primary hover:bg-gray-100'
                                 }`}>
                                 Contact Us
@@ -81,7 +81,7 @@ const Navbar = () => {
                     <div className="flex items-center md:hidden">
                         <button
                             onClick={toggleMenu}
-                            className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors ${scrolled ? 'text-gray-900' : 'text-white'
+                            className={`inline-flex items-center justify-center p-2 rounded-md focus:outline-none transition-colors ${scrolled ? 'text-gray-900' : 'text-black'
                                 }`}
                             aria-expanded={isOpen}
                         >
