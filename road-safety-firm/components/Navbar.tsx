@@ -70,7 +70,7 @@ const Navbar = () => {
                         <Link href="/contact">
                             <button className={`px-6 py-2.5 rounded-full text-sm font-bold shadow-lg transition-all transform hover:-translate-y-0.5 ${scrolled
                                 ? 'bg-primary text-black hover:bg-blue-700'
-                                : 'bg-white text-primary hover:bg-gray-100'
+                                : 'bg-white text-black hover:bg-gray-100'
                                 }`}>
                                 Contact Us
                             </button>
