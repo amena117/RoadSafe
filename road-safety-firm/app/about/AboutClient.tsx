@@ -5,7 +5,7 @@ import { FaCheckCircle, FaAward, FaUsers } from 'react-icons/fa';
 
 export default function AboutClient() {
     return (
-        <div className="bg-white overflow-hidden">
+        <div className="bg-neutral-50 min-h-screen">
             {/* Immersive Header */}
             <section className="relative bg-gray-900 text-white py-32 lg:py-40 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-primary/20 to-gray-900 z-0"></div>
@@ -18,7 +18,7 @@ export default function AboutClient() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 tracking-tight text-shadow"
+                        className="text-5xl md:text-6xl lg:text-7xl font-bold font-heading mb-6 tracking-tight"
                     >
                         About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">RoadSafe Pro</span>
                     </motion.h1>
@@ -26,7 +26,7 @@ export default function AboutClient() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2, duration: 0.8 }}
-                        className="text-xl text-gray-300 max-w-3xl mx-auto font-light leading-relaxed"
+                        className="text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed"
                     >
                         Our Mission: To engineer a safer future through proactive education, intelligent infrastructure, and unwavering commitment to quality.
                     </motion.p>
@@ -35,7 +35,7 @@ export default function AboutClient() {
 
             {/* Our Story - Organic Layout */}
             <section className="py-24 relative">
-                <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-gray-900 to-white z-0"></div>
+
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <motion.div
